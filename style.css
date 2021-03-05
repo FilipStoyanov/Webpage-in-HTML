@@ -1,0 +1,232 @@
+.title1
+{
+    color:rgb(139, 99, 37);
+    font-size:50px;
+    text-align:center;
+    margin-top: 10px;
+    margin-left:10px;
+}
+body{
+    background-color:skyblue;
+}
+
+#text1,#text2,#text3,#text4
+{
+    font-size:23px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .navigation a:hover {
+    background-color:darkgreen;
+    color: black;
+  }
+  
+  .navigation a.active {
+    background-color: #4CAF50;
+    color:black;
+  }
+.mySlides {display: none}
+img {vertical-align: middle;
+    margin-left:0px;}
+.slideshow-container {
+    max-width: 1450px;
+    position: relative;
+    margin-left:0px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  #title1
+  {
+      margin-left:500%;
+      font-size:50px;
+      color:darkgoldenrod;
+      text-align:center;
+  }
+  .text {
+    color: darkgrey;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+  }
+  #img1,#img2,#img3
+  {
+      height:500px;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-top:50px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  #aboutUs
+  {
+      font-size:60px;
+      color:rgb(90, 90, 90);
+      text-align:center;
+  }
+  #icon1
+  {
+      margin-left:70px;
+  }
+  #icon2
+  {
+      margin-left:140px;
+  }
+  #icon3
+  {
+      margin-left:240px;
+  }
+  #icon4
+  {
+      margin-left:255px;
+  }
+  .row {
+    display: flex;
+  }
+  .row2 {
+    display: flex;
+    border-style:solid;
+  }
+  .row3 {
+    display: flex;
+    border-style:solid;
+  }
+  .column {
+    flex: 50%;
+    height: 300px;
+    padding: 10px;
+  }
+  .column2 {
+    flex: 50%;
+    height: 400px;
+    padding: 10px;
+  }
+  .column3 {
+    flex: 50%;
+    height: 400px;
+    padding: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  .row3:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  #item1,#item2
+  {
+    font-size:25px;
+    color:black;
+  }
+  #laptop,#camera
+  {
+    width:300px;
+    height:300px;
+    text-align:center;
+    margin-left:200px;
+  }
+  #more,#more2
+  {
+    width:100px;
+    height:100px;
+    color:black;
+  }
+  #moreStyle,#moreStyle2
+  {
+    background-color:lightyellow;
+    color:black;
+    font-size:20px;
+    width:130px;
+    height:30px;
+    margin-left:200px;
+  }
+
+  

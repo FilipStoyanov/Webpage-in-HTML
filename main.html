@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Alecto
+        </title>
+     </head>
+     <body>
+        
+        <div class="slideshow-container">
+
+            <div class="navigation">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#products">Products</a>
+              </div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3
+                  <p id="title1"> <u>Alecto</u></p>
+              </div>
+              <img id="img1" src="img1.jpg" style="width:100%">
+              <div class="text"><a href="#footer">Learn more</a>
+                <footer id="footer"></footer></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3
+                <p id="title1"> <u>Alecto</u></p>
+              </div>
+              <img id="img2" src="img2.jpg" style="width:100%">
+              <div class="text"><a href="#footer">Learn more</a>
+                <footer id="footer"></footer></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3
+                <p id="title1"> <u>Alecto</u></p>
+              </div>
+              <img id="img3" src="img3.jpg" style="width:100%">
+              <div class="text"><a href="#footer">Learn more</a>
+              <footer id="footer"></footer></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        <p id="aboutUs"><u>About us</u></p>
+         <img  id="icon1" src="icon1.png" style="width:150px" style="height:250px">
+         <img id="icon2" src="icon2.png" style="width:150px" style="height:250px">
+         <img id="icon3" src="icon6.png" style="width:150px" style="height:250px">
+         <img id="icon4" src="icon4.png" style="width:150px" style="height:250px">
+         <br>
+         <div class="row">
+            <div id="text1" class="column" style="background-color:skyblue;">
+              <h2><u>Achievements</u></h2>
+              <p>We are proud to have internationally recognized projects... </p>
+            </div>
+            <div id="text2" class="column" style="background-color:skyblue;">
+              <h2><u>Location</u></h2>
+              <p>Our central office location: 3 Edgar Buildings ,George Street, Bath, England
+              </p>
+            </div>
+            <div id="text3" class="column" style="background-color:skyblue;">
+                <h2><u>Contact us</u></h2>
+                <p>GSM: +020 6754 2753
+                   Email: alecto_office.1989@gmail.com
+                </p>
+              </div>
+              <div id="text4" class="column" style="background-color:skyblue;">
+                <h2><u>History</u></h2>
+                <p>We have established in 1989...
+                    <br>
+                   Over 30 years...</p>
+              </div>
+          </div>
+          <div class="row2">
+            <div id="text3" class="column2" style="background-color:skyblue;">
+              <h2><u><img id="laptop" src="laptop.png"></u></h2>
+              <p> </p>
+            </div>
+            <div id="text4" class="column2" style="background-color:skyblue;">
+              <h2><u>Laptop</u></h2>
+              <p id="item1">A laptop or laptop computer is a small, portable personal computer (PC) with a "clamshell" form factor, typically having a thin LCD or LED computer screen mounted on the inside of the upper lid of the clamshell and an alphanumeric keyboard on the inside of the lower lid.  </p>
+              <p id="more"><button id="moreStyle"><a href="https://en.wikipedia.org/wiki/Laptop">Learn more</a></p>
+            </div>
+            </div>
+            <div class="row3">
+              <div id="text5" class="column3" style="background-color:skyblue;">
+                <h2><u><img id="camera" src="camera.png"></u></h2>
+              </div>
+              <div id="text6" class="column3" style="background-color:skyblue;">
+                <h2><u>Camera</u></h2>
+                <p id="item2">A camera is an optical instrument used to capture an image. At their most basic, cameras are sealed boxes (the camera body) with a small hole (the aperture) that allow light in to capture an image on a light-sensitive surface (usually photographic film or a digital sensor).</p>
+                <p id="more2"><button id="moreStyle2"><a href="https://en.wikipedia.org/wiki/Camera">Learn more</a></p>
+              </div>
+              </div>
+         </body>   
+</html>
